@@ -31,6 +31,13 @@
     align-items: center;
 }
 
+.header-link {
+    transition: 0.3s all;
+}
+
+.header-link:hover {
+    color: hsl(43deg 100% 50%);
+}
 
 .header-btn {
     background-color: hsl(43deg 100% 50%);
@@ -41,5 +48,9 @@
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s all;
+}
+
+.header-btn:hover {
+   opacity: 0.8;
 }
