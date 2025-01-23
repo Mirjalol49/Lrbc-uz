@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import Aloqabank from "../../Images/Aloqabank_logo.jpg";
+import Aloqabank from "../../Images/AloqaBank_logo.jpg";
 import "./Brands.css";
 
 const Brands = () => {
