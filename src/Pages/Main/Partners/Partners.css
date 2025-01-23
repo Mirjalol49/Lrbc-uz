@@ -1,0 +1,25 @@
+.partners {
+   margin-top: 50px;
+   overflow: hidden;
+   background-color: hsl(0, 0%, 100%);
+  }
+  
+  .partners-title {
+    font-family: "Kanit", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .partners-text {
+    width: 100%;
+    max-width: 900px;
+   
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(121, 120, 120);
+    margin: 0 auto;
+    text-align: center;
+  }
