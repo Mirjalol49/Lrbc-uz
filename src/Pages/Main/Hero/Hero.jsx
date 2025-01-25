@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import Spinning from '../../../assets/Components/Spinning'
-import HeroImage from '../../../assets/Images/mainhero.png'
+import HeroImage from '../../../assets/Images/herochar.png'
 const Hero = () => {
   return (
     <section className='hero-section'>
