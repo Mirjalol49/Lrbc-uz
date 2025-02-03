@@ -63,7 +63,9 @@ const ReviewCard = ({ img, name, username, body }) => (
 );
 
 const MarqueeDemo = () => (
+  
   <div className="testimonials relative flex h-full w-full flex-col items-center justify-center overflow-hidden   md:shadow-xl">
+    <h2 className="testimonials-title">Testimonials</h2>
     <Marquee pauseOnHover className="[--duration:20s]">
       {firstRow.map((review) => (
         <ReviewCard key={review.username} {...review} />

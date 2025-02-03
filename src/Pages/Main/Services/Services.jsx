@@ -9,44 +9,26 @@ import Interior from "../../../assets/Images/interior.webp";
 import Renovation from "../../../assets/Images/renovation.webp";
 import Residental from "../../../assets/Images/residental.webp";
 import Structural from "../../../assets/Images/structural.webp";
+import ServiceC from '../../../assets/Components/ServiceC/ServiceC';
 const Services = () => {
   return (
     <section className='services' id='services'>
       <div className="container">
         <h2 className='services-title'>Services</h2>
         <div className="servicecard-wrapper">
- <div className='servicecard'>
-      <img className='servicecard-img' src={Renovation} alt="service image" />
-      <h3 className='servicecard-title'>Renovation and Remodeling</h3>
-    </div>
-
-    <div className='servicecard'>
-      <img className='servicecard-img' src={Commercial} alt="service image" />
-      <h3 className='servicecard-title'>Commercial Construction</h3>
-    </div>
+ 
+     
 
 
-    <div className='servicecard'>
-      <img className='servicecard-img' src={Interior} alt="service image" />
-      <h3 className='servicecard-title'>Home Interior Design</h3>
+    <ServiceC title={"Renovation and Remodeling"} img={Renovation} />
+    <ServiceC title={"Commercial Construction"} img={Commercial} />
+    <ServiceC title={"Home Interior Design"} img={Interior} />
+    <ServiceC title={"Structural Engineering"} img={Structural} />
+    <ServiceC title={"Foundation Construction"} img={Foundation} />
+    <ServiceC title={"Residential Construction"} img={Residental} />
+    
     </div>
-
-
-    <div className='servicecard'>
-      <img className='servicecard-img' src={Structural} alt="service image" />
-      <h3 className='servicecard-title'>Structural Engineering</h3>
-    </div>
-
-    <div className='servicecard'>
-      <img className='servicecard-img' src={Foundation} alt="service image" />
-      <h3 className='servicecard-title'>Foundation Construction</h3>
-    </div>
-
-    <div className='servicecard'>
-      <img className='servicecard-img' src={Residental} alt="service image" />
-      <h3 className='servicecard-title'>Residential Construction</h3>
-    </div>
-    </div>
+    
       </div>
     </section>
   )

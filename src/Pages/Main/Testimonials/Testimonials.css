@@ -12,3 +12,9 @@
 .hello:hover {
     background-color: hsl(232deg 28% 34%);
 }
+
+.testimonials-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}

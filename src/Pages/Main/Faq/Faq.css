@@ -1,7 +1,21 @@
 .faq {
-    background-color: hsl(233deg 28% 15%);
+    padding: 50px 0;
+    color: #fff;
+
 }
 
-.faq-title{
+.faq-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.accordition-item {
+    background-color:  #32385b;
     color: #fff;
 }
