@@ -1,5 +1,5 @@
 import {Card, CardHeader, CardBody, Image} from "@heroui/react";
-import Foundation from "../../Images/Foundation.webp";
+
 export default function ServiceC({img, title}) {
   return (
     <Card className="py-4 bg-[#15112c] w-[350px]">
