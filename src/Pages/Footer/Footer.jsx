@@ -31,7 +31,7 @@ const Footer = () => {
           </ul>
 
           <a className="footer-tel" href="tel:+998332334000">
-            +998 93 748 91 41
+          +99894 000 55 99
           </a>
         </div>
         <div className="footer-owner">

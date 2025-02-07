@@ -1,42 +1,43 @@
 import { cn } from '../../../../public/lib/utils';
 import Marquee from '../../../assets/Components/marquee';
+import Mirjalol from "../../../assets/Images/mirjalol.jpg"
 import './Testimonials.css';
 const reviews = [
   {
-    name: 'Jack',
-    username: '@jack',
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: 'https://avatar.vercel.sh/jack',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
   {
-    name: 'Jill',
-    username: '@jill',
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: 'https://avatar.vercel.sh/jill',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
   {
-    name: 'John',
-    username: '@john',
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: 'https://avatar.vercel.sh/john',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
   {
-    name: 'Jane',
-    username: '@jane',
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: 'https://avatar.vercel.sh/jane',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
   {
-    name: 'Jenny',
-    username: '@jenny',
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: 'https://avatar.vercel.sh/jenny',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
   {
-    name: 'James',
-    username: '@james',
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: 'https://avatar.vercel.sh/james',
+    name: 'Mirjalol',
+    username: '@mirjalol',
+    body: "Sizning kompaniyangiz bilan hamkorlik qilish biz uchun katta sharaf bo'ldi. Loyihamiz muvaffaqiyatli amalga oshirildi.",
+    img: {Mirjalol},
   },
 ];
 
@@ -52,7 +53,7 @@ const ReviewCard = ({ img, name, username, body }) => (
     )}
   >
     <div className="flex flex-row items-center gap-2">
-      <img className="rounded-full" width="32" height="32" alt="" src={img} />
+      <img className="rounded-full" width="32" height="32" alt="" src={Mirjalol} />
       <div className="flex flex-col">
         <figcaption className="text-sm font-medium dark:text-white">{name}</figcaption>
         <p className="text-xs font-medium dark:text-white/40">{username}</p>

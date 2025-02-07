@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const CircularText = () => {
-  const topText = "BUILD YOUR";
-  const bottomText = "PROJECT";
+  const topText = "LOYIHANGIZNI";
+  const bottomText = "YARATING";
   
   const createTextPositions = (text, startAngle, endAngle) => {
     const characters = text.split('');
@@ -17,7 +17,7 @@ const CircularText = () => {
     }));
   };
 
-  const topChars = createTextPositions(topText, -70, 70);
+  const topChars = createTextPositions(topText, -80, 80);
   const bottomChars = createTextPositions(bottomText, 110, 250);
 
   return (
@@ -58,9 +58,10 @@ const CircularText = () => {
                     translate(-50%, -50%)
                     rotate(${angle + 90}deg)
                   `,
+                  
                 }}
               >
-                <span className="block text-sm font-bold text-gray-900 tracking-wide">
+                <span className="block text-sm font-bold text-gray-900 tracking-[2px]">
                   {char}
                 </span>
               </div>

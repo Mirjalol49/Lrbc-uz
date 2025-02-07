@@ -14,13 +14,13 @@ const Header = () => {
                     <ul className='header-nav-list'>
                     
                         
-                        <li className='header-nav-item'><a className='header-link' href="#services">Services</a></li>
-                        <li className='header-nav-item'><a className='header-link' href="#projects">Projects</a></li>
-                        <li className='header-nav-item'><a className='header-link' href="#news">News</a></li>
-                        <li className='header-nav-item'><a className='header-link' href="#contact">Contact Us</a></li>
+                        <li className='header-nav-item'><a className='header-link' href="#services">Xizmatlar</a></li>
+                        <li className='header-nav-item'><a className='header-link' href="#projects">Loyihalar</a></li>
+                        <li className='header-nav-item'><a className='header-link' href="#news">Yangiliklar</a></li>
+                        <li className='header-nav-item'><a className='header-link' href="#contact">Bog'lanish</a></li>
                     </ul>
                 </nav>
-                <button className='header-btn'>Get Started</button>
+                <button className='header-btn'>+998 94 000 55 99</button>
                 </div>
             </div>
             </div>  

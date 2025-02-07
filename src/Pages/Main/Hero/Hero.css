@@ -17,11 +17,16 @@
     font-family: "Paytone One", sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     
     
    
 
+}
+
+.hero-in-wrapper {
+    width: 100%;
+    max-width: 600px;
 }
 
 .hero-in-title {
@@ -35,13 +40,13 @@
 .hero-in-text {
     
    opacity: 0.7;
-   margin-bottom: 20px;
+  
   
 }
 
 .hero-in-stats {
     font-family: "Paytone One", sans-serif;
-    font-size:2rem;
+    font-size:1.8rem;
     font-weight:400;
 color: hsl(43deg 100% 50%)
 }

@@ -4,6 +4,7 @@ import Partners from './Partners/Partners'
 import Services from './Services/Services'
 import Testimonilas from './Testimonials/Testimonilas'
 import FAQ from './Faq/Faq'
+import Cta from '../Cta/Cta'
 
 const Main = () => {
   return (
@@ -12,7 +13,8 @@ const Main = () => {
       <Partners />
       <Services />
       <Testimonilas />
-      <FAQ />
+      {/* <FAQ /> */}
+      <Cta/>
     </main>
   )
 }
