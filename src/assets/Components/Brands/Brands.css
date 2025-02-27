@@ -1,16 +1,43 @@
 .brands-section {
-    padding: 50px 0 10px 0; /* Remove extra padding */
-    overflow: hidden; /* Prevent overflow */
+  padding: 40px 0 10px 0; /* Reduce padding for better layout */
+  overflow: hidden;
+  background-color: #fff; /* Ensures good visibility */
+}
+
+/* Marquee Container */
+.marquee-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Maintain spacing */
+}
+
+/* Brand Images */
+.brands-img {
+  margin: 0 20px; /* Space between images */
+  width: clamp(80px, 10vw, 120px); /* Responsive image size */
+  height: auto;
+  object-fit: contain; /* Ensure logos are fully visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .brands-section {
+      padding: 30px 0;
   }
-  
-  .marquee-container {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Consistent spacing between images */
-  }
-  
+
   .brands-img {
-    margin: 0 30px 0 30px; /* Remove any default margin */
-    width: 200px; /* Ensure consistent image size */
-    height: auto;
+      width: clamp(60px, 12vw, 100px); /* Adjust image size for smaller screens */
+      margin: 0 15px;
   }
+}
+
+@media (max-width: 480px) {
+  .brands-section {
+      padding: 20px 0;
+  }
+
+  .brands-img {
+      width: clamp(50px, 15vw, 80px); /* Further scale down images */
+      margin: 0 10px;
+  }
+}

@@ -1,26 +1,64 @@
 .partners {
-  
-   padding-top:50px;
-   overflow: hidden;
-   background-color: hsl(0, 0%, 100%);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+/* Title */
+.partners-title {
+  font-size: clamp(2rem, 4vw, 3rem); /* Responsive font size */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Text */
+.partners-text {
+  width: 100%;
+  max-width: 900px;
+  font-weight: 600;
+  font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+  color: rgb(121, 120, 120);
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px; /* Add some padding for small screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partners {
+      padding-top: 30px;
+      padding-bottom: 30px;
   }
-  
+
   .partners-title {
-   
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    text-align: center;
+      font-size: 2.5rem;
   }
 
   .partners-text {
-    width: 100%;
-    max-width: 900px;
-   
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: rgb(121, 120, 120);
-    margin: 0 auto;
-    text-align: center;
+      font-size: 1.2rem;
   }
+}
+
+@media (max-width: 480px) {
+  .partners-title {
+      font-size: 2rem;
+  }
+
+  .partners-text {
+      font-size: 1rem;
+      padding: 0 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .partners-title {
+      font-size: 1.8rem;
+  }
+
+  .partners-text {
+      font-size: 0.9rem;
+  }
+}

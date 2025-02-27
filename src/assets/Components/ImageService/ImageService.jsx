@@ -1,59 +1,24 @@
-import React from 'react';
-
 const ImageService = ({
-  imageUrl = "/api/placeholder/800/800",
- 
-  text = "Years of Experience",
-  imageAlt = "Experience background",
-  className = "",
-  // Gradient control props
-  gradientStart = "transparent",
-  gradientMiddle = "rgb(30, 58, 138, 0.7)", // blue-900 with opacity
-  gradientEnd = "rgb(30, 58, 138, 0.95)", // blue-900 with opacity
-  gradientStops = {
-    start: "0%",
-    middle: "25%",
-    end: "100%"
-  }
+  imageUrl,
+  text,
+  imageAlt = "Service image",
+  className = ""
 }) => {
-  // Convert gradient stops to CSS custom properties
-  const gradientStyle = {
-    '--gradient-start': gradientStart,
-    '--gradient-middle': gradientMiddle,
-    '--gradient-end': gradientEnd,
-    '--gradient-stop-start': gradientStops.start,
-    '--gradient-stop-middle': gradientStops.middle,
-    '--gradient-stop-end': gradientStops.end,
-    background: `linear-gradient(to top, 
-      var(--gradient-end) var(--gradient-stop-start),
-      var(--gradient-middle) var(--gradient-stop-middle),
-      var(--gradient-start) var(--gradient-stop-end)
-    )`
-  };
-
   return (
-    <div className={`relative overflow-hidden rounded-2xl ${className}`}>
+    <div className={`relative overflow-hidden rounded-xl shadow-lg transition-transform transform hover:scale-105 ${className}`}>
       {/* Background image */}
       <img 
         src={imageUrl} 
         alt={imageAlt}
-        className="w-[320px] h-auto object-cover"
+        className="w-full h-48 object-cover md:h-40"
       />
       
-      {/* Gradient overlay */}
-      <div 
-        className="absolute inset-0" 
-        style={gradientStyle}
-      />
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-blue-900 via-blue-800/70 to-transparent" />
       
       {/* Content */}
       <div className="absolute bottom-0 left-0 p-4 w-full">
-       
-        
-        {/* Text */}
-        <h3 className="text-2xl font-bold text-amber-400">
-          {text}
-        </h3>
+        <h3 className="text-lg md:text-xl font-bold text-amber-400">{text}</h3>
       </div>
     </div>
   );

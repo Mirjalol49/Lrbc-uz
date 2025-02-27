@@ -3,7 +3,8 @@ import Hero from './Hero/Hero'
 import Partners from './Partners/Partners'
 import Services from './Services/Services'
 import Testimonilas from './Testimonials/Testimonilas'
-import FAQ from './Faq/Faq'
+// import FAQ from './Faq/Faq'
+import Showcase from "./Showcase/Showcase"
 import Cta from '../Cta/Cta'
 
 const Main = () => {
@@ -12,7 +13,9 @@ const Main = () => {
       <Hero />
       <Partners />
       <Services />
-      <Testimonilas />
+      <Showcase/>
+      {/* <Testimonilas /> */}
+    
       {/* <FAQ /> */}
       <Cta/>
     </main>
