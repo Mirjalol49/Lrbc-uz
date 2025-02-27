@@ -6,6 +6,7 @@ import Testimonilas from './Testimonials/Testimonilas'
 // import FAQ from './Faq/Faq'
 import Showcase from "./Showcase/Showcase"
 import Cta from '../Cta/Cta'
+import Certificate from "./Certificate/Certificate"
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
       <Partners />
       <Services />
       <Showcase/>
+      <Certificate/>
       {/* <Testimonilas /> */}
     
       {/* <FAQ /> */}

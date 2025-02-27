@@ -1,0 +1,77 @@
+import React, { useState } from 'react';
+
+const CertificateGallery = () => {
+  const [selectedCert, setSelectedCert] = useState(null);
+  
+  // Sample certificate images
+  const certificates = [
+    { id: 1, src: "/api/placeholder/400/300" },
+    { id: 2, src: "/api/placeholder/400/300" },
+    { id: 3, src: "/api/placeholder/400/300" },
+    { id: 4, src: "/api/placeholder/400/300" },
+    { id: 5, src: "/api/placeholder/400/300" },
+    { id: 6, src: "/api/placeholder/400/300" }
+  ];
+  
+  // Open modal with smooth animation
+  const openModal = (cert) => {
+    setSelectedCert(cert);
+  };
+  
+  // Close modal
+  const closeModal = () => {
+    setSelectedCert(null);
+  };
+  
+  return (
+    <div className="bg-gray-100 min-h-screen p-8">
+      {/* Certificates Grid */}
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
+        {certificates.map((cert) => (
+          <div 
+            key={cert.id} 
+            className="transform transition-all duration-300 hover:scale-105 cursor-pointer"
+            onClick={() => openModal(cert)}
+          >
+            <img 
+              src={cert.src} 
+              alt="Certificate" 
+              className="w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+        ))}
+      </div>
+      
+      {/* Modal */}
+      {selectedCert && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+        >
+          <div 
+            className="relative animate-fadeIn"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img 
+              src={selectedCert.src} 
+              alt="Certificate" 
+              className="max-w-full max-h-screen object-contain rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      )}
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: scale(0.9); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.3s ease-out forwards;
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default CertificateGallery;
