@@ -24,8 +24,8 @@ const Cta = () => {
       e.preventDefault();
 
       // Telegram bot details
-    const telegramBotToken = "7224247467:AAGbyOKSJlzPSoKEoxHkH9F6bn1ds5OqdMg";
-    const chatId = "1907166652";
+    const telegramBotToken = "YOUR_BOT_TOKEN";
+    const chatId = "YOUR_CHAT_ID";
 
     try {
       // Send data to Telegram
@@ -51,45 +51,46 @@ const Cta = () => {
   return (
     <section className='cta'>
         <div className="container">
-                <div className="cta-mainwrapper">
-            <div className="cta-wrapper">
-                <h2 className='cta-title'>Bepul Konsultatsiya</h2>
-               
-                <form className="contact-form" onSubmit={handleSubmit}>
-             
-              <input
-                className="contact-input name-input"
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Ismingiz"
-                autoComplete="off"
-                required
-              />
-              
-              <input
-                className="contact-input"
-                type="tel"
-                id="number"
-                name="number"
-                value={formData.number}
-                onChange={handleChange}
-                placeholder="+998"
-                min={12}
-                autoComplete="off"
-                required
-              />
-              <button className="contact-btn">Yuborish</button>
-            </form>
-            </div>
-            <img className='cta-img' src={Guy} alt="guy" />
+            <div className="cta-mainwrapper">
+                <div className="cta-wrapper">
+                    <h2 className='cta-title'>Bepul Konsultatsiya</h2>
+                
+                    <form className="contact-form" onSubmit={handleSubmit}>
+                
+                        <input
+                            className="contact-input name-input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            placeholder="Ismingiz"
+                            autoComplete="off"
+                            required
+                        />
+                        
+                        <input
+                            className="contact-input"
+                            type="tel"
+                            id="number"
+                            name="number"
+                            value={formData.number}
+                            onChange={handleChange}
+                            placeholder="+998"
+                            min={12}
+                            autoComplete="off"
+                            required
+                        />
+                        <button className="contact-btn">Yuborish</button>
+                    </form>
+                </div>
+                <div className="cta-image-wrapper">
+                    <img className='cta-img' src={Guy} alt="guy" />
+                </div>
             </div>
         </div>
-      
     </section>
   )
 }
 
-export default Cta
+export default Cta;

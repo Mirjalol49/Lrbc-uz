@@ -26,7 +26,13 @@ const Brands = () => {
 
   return (
     <section className="brands-section">
-      <Marquee speed={50} loop={0} className="marquee-container" gradient={gradient}>
+      <Marquee 
+        speed={50} 
+        loop={0} 
+        className="marquee-container" 
+        gradient={gradient} 
+        style={{ overflow: "hidden" }} // Prevents unwanted scrolling
+      >
         <img className="brands-img" src={Aloqabank} alt="Aloqabank" />
         <img className="brands-img" src={Bank} alt="Bank" />
         <img className="brands-img" src={Bojxona} alt="Bojxona" />
