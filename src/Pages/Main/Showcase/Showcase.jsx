@@ -23,6 +23,13 @@ import chinni4 from "../../../assets/Images/chinni_zavod4.jpg";
 import chinni6 from "../../../assets/Images/chinni_zavod6.jpg";
 import chinni7 from "../../../assets/Images/chinni_zavod7.jpg";
 import chinni8 from "../../../assets/Images/chinni_zavod8.jpg";
+import project1 from "../../../assets/Images/project4.1.jpg";
+import project2 from "../../../assets/Images/project4.2.jpg";
+import project3 from "../../../assets/Images/project4.3.jpg";
+import project4 from "../../../assets/Images/project4.4.jpg";
+import project6 from "../../../assets/Images/project4.6.jpg";
+import project7 from "../../../assets/Images/project4.7.jpg";
+import project8 from "../../../assets/Images/project4.8.jpg";
 
 import "./Showcase.css"
 
@@ -49,6 +56,14 @@ const projects = [
     description: "Zamonaviy tijorat majmuasining to'liq qurilishi va jihozlanishi. Loyiha eng yuqori sifat standartlariga muvofiq amalga oshirildi.",
     images: [img1, img2, img3, img4],
     category: "Tijorat Qurilishi",
+    status: "Tugallangan"
+  },
+  {
+    id: 4,
+    title: "Zamonaviy Loyiha",
+    description: "Zamonaviy arkitektura va dizayn bilan yaratilgan loyiha. Loyihada eng yangi texnologiyalar va yuksak sifat standartlari qo'llanildi.",
+    images: [project1, project2, project3, project4, project6, project7, project8],
+    category: "Zamonaviy Qurilish",
     status: "Tugallangan"
   }
 ];
