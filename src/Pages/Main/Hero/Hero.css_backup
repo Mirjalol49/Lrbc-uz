@@ -44,17 +44,6 @@
     color: hsl(43deg 100% 50%);
 }
 
-.hero-slogan {
-    font-family: "Paytone One", sans-serif;
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 700;
-    color: hsl(43deg 100% 50%);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    line-height: 1.1;
-    letter-spacing: 1px;
-}
-
 /* Image background */
 .hero-img-bg {
     position: relative;

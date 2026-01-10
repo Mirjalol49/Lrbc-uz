@@ -30,6 +30,13 @@ import project4 from "../../../assets/Images/project4.4.jpg";
 import project6 from "../../../assets/Images/project4.6.jpg";
 import project7 from "../../../assets/Images/project4.7.jpg";
 import project8 from "../../../assets/Images/project4.8.jpg";
+import andijon1 from "../../../assets/Images/andijon1.jpg";
+import andijon2 from "../../../assets/Images/andijon2.jpg";
+import andijon3 from "../../../assets/Images/andijon3.jpg";
+import andijon4 from "../../../assets/Images/andijon4.jpg";
+import andijon5 from "../../../assets/Images/andijon5.jpg";
+import andijon6 from "../../../assets/Images/andijon6.jpg";
+import andijon7 from "../../../assets/Images/andijon7.jpg";
 
 import "./Showcase.css"
 
@@ -65,6 +72,14 @@ const projects = [
     images: [project1, project2, project3, project4, project6, project7, project8],
     category: "Zamonaviy Qurilish",
     status: "Tugallangan"
+  },
+  {
+    id: 5,
+    title: "Andijon viloyati Shahrixon tumani Karnaychi MFY xududida ichimlik suvi tarmog‘i va suv qudug‘i qurilishi",
+    description: "Andijon viloyati Shahrixon tumani Karnaychi MFY xududida aholini toza ichimlik suvi bilan ta'minlash maqsadida yangi suv tarmog'i va suv qudug'i qurilishi loyihasi muvaffaqiyatli amalga oshirildi.",
+    images: [andijon1, andijon2, andijon3, andijon4, andijon5, andijon6, andijon7],
+    category: "Suv Ta'minoti",
+    status: "Tugallangan"
   }
 ];
 
@@ -90,16 +105,16 @@ export default function AdvancedProjects() {
         <div className="projects-header">
           <h2 className="projects-title">Bizning Loyihalar</h2>
           <p className="projects-subtitle">
-            Biz amalga oshirgan eng yaxshi loyihalarni ko'ring
+            17 yildan buyon 300 dan oshiq loyihalar va mamnun mijozlar.
           </p>
         </div>
-        
+
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card" onClick={() => openModal(project)}>
               <div className="project-image-container">
-                <img 
-                  src={project.images[0]} 
+                <img
+                  src={project.images[0]}
                   alt={project.title}
                   className="project-main-image"
                 />
@@ -115,7 +130,7 @@ export default function AdvancedProjects() {
                   </button>
                 </div>
               </div>
-              
+
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
@@ -130,7 +145,7 @@ export default function AdvancedProjects() {
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="modal-close" onClick={closeModal}>×</button>
-            
+
             <div className="modal-header">
               <h2 className="modal-title">{selectedProject.title}</h2>
               <div className="modal-meta">

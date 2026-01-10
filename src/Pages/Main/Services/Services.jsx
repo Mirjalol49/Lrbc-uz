@@ -3,12 +3,12 @@ import './Services.css'
 
 
 // IMAGES
-import Commercial from "../../../assets/Images/commercial.webp";
-import Foundation from "../../../assets/Images/foundation.webp";
-import Interior from "../../../assets/Images/interior.webp";
-import Renovation from "../../../assets/Images/renovation.webp";
-import Residental from "../../../assets/Images/residental.webp";
-import Structural from "../../../assets/Images/structural.webp";
+import MetalStructures from "../../../assets/Images/service_metal_structures.png";
+import DesignPlanning from "../../../assets/Images/service_design_planning.png";
+import BuildingConstruction from "../../../assets/Images/service_building_construction.png";
+import RoadConstruction from "../../../assets/Images/service_road_construction.png";
+import Repair from "../../../assets/Images/service_repair.png";
+import EngineeringNetworks from "../../../assets/Images/service_engineering_networks.png";
 import ServiceC from '../../../assets/Components/ServiceC/ServiceC';
 import Imageser from '../../../assets/Components/ImageService/ImageService';
 const Services = () => {
@@ -17,17 +17,17 @@ const Services = () => {
       <div className="container">
         <h2 className='services-title'>Xizmatlar</h2>
         <div className="servicecard-wrapper">
- 
-    
-    <Imageser imageUrl={Renovation} text='Ta’mirlash va qayta jihozlash'/>
-    <Imageser imageUrl={Commercial} text='Savdo qurilishi'/>
-    <Imageser imageUrl={Interior} text='Uy ichki dizayni'/>
-    <Imageser imageUrl={Structural} text='Konstruktiv muhandislik'/>
-    <Imageser imageUrl={Foundation} text='Poydevor qurish'/>
-    <Imageser imageUrl={Residental} text='Turar-joy qurilishi'/>
-    
-    </div>
-    
+
+
+          <Imageser imageUrl={MetalStructures} text="1. Metal konstruskiyalarni ishlab chiqarish va o'rnatish" />
+          <Imageser imageUrl={DesignPlanning} text="2. Loyihalash va qurilish xujjatlarini tayyorlash" />
+          <Imageser imageUrl={BuildingConstruction} text="3. Bino va inshoatlarni qurish" />
+          <Imageser imageUrl={RoadConstruction} text="4. Yo'l qurulishi va obodonlashtirish" />
+          <Imageser imageUrl={Repair} text="5. Ta'mirlash" />
+          <Imageser imageUrl={EngineeringNetworks} text="6. Injiner va komunikatsiya tarmoqlarini qurish" />
+
+        </div>
+
       </div>
     </section>
   )
