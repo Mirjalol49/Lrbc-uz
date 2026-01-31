@@ -1,22 +1,18 @@
 import Footer from "./Pages/Footer/Footer";
 import Header from "./Pages/Header/Header";
 import Main from "./Pages/Main/Main";
-import Test from "./Pages/Test/Test";
+import { LanguageProvider } from "./context/LanguageContext";
 
 function App() {
- 
-
   return (
-    <>
-    <Test/>
-   <Header />
-   <Main />
-   <Footer />
-  
-    </>
-  )
+    <LanguageProvider>
+      <Header />
+      <Main />
+      <Footer />
+    </LanguageProvider>
+  );
 }
 
-export default App
+export default App;
 
 

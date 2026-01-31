@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import { useLanguage } from "../../../context/LanguageContext";
 
 // Import project images
 import qayta1 from "../../../assets/Images/qayta_tamirlash1.jpg";
@@ -37,55 +38,54 @@ import andijon4 from "../../../assets/Images/andijon4.jpg";
 import andijon5 from "../../../assets/Images/andijon5.jpg";
 import andijon6 from "../../../assets/Images/andijon6.jpg";
 import andijon7 from "../../../assets/Images/andijon7.jpg";
+import iib1 from "../../../assets/Images/iib1.jpg";
+import iib2 from "../../../assets/Images/iib2.jpg";
+import iib3 from "../../../assets/Images/iib3.jpg";
+import iib4 from "../../../assets/Images/iib4.jpg";
+import iib5 from "../../../assets/Images/iib5.jpg";
+import iib6 from "../../../assets/Images/iib6.jpg";
+import iib7 from "../../../assets/Images/iib7.jpg";
+import iib8 from "../../../assets/Images/iib8.jpg";
 
 import "./Showcase.css"
-
-const projects = [
-  {
-    id: 1,
-    title: "Toshkent Chinni Zavodi Rekonstruksiyasi",
-    description: "Prezident Shavkat Mirziyoyev tashabbuslari asosida 1952-yilda tashkil etilgan tarixiy Toshkent chinni zavodining to'liq rekonstruksiyasi. Aloqabank tomonidan 87 milliard so'm qiymatidagi loyiha amalga oshirilib, 300 ta ish o'rni yaratildi. Zavodda yiliga 30 million dona oshxona idishlari, suvenirlar ishlab chiqariladi va ko'plab mamlakatlarga eksport qilinadi.",
-    images: [chinni1, chinni2, chinni3, chinni4, chinni6, chinni7, chinni8],
-    category: "Sanoat Rekonstruksiyasi",
-    status: "Prezident tomonidan ochilgan"
-  },
-  {
-    id: 2,
-    title: "World Bank Uzbekistan Markaziy Ofisi",
-    description: "Toshkent Biznes Markazining 13-15-qavatlarida joylashgan World Bank Uzbekistan ning markaziy ofisini qayta ta'mirlash va jihozlash ishlari",
-    images: [qayta1, qayta2, qayta3, qayta4, qayta5],
-    category: "Ofis Ta'mirlash",
-    status: "Tugallangan"
-  },
-  {
-    id: 3,
-    title: "Tijorat Majmuasi Qurilishi",
-    description: "Zamonaviy tijorat majmuasining to'liq qurilishi va jihozlanishi. Loyiha eng yuqori sifat standartlariga muvofiq amalga oshirildi.",
-    images: [img1, img2, img3, img4],
-    category: "Tijorat Qurilishi",
-    status: "Tugallangan"
-  },
-  {
-    id: 4,
-    title: "Zamonaviy Loyiha",
-    description: "Zamonaviy arkitektura va dizayn bilan yaratilgan loyiha. Loyihada eng yangi texnologiyalar va yuksak sifat standartlari qo'llanildi.",
-    images: [project1, project2, project3, project4, project6, project7, project8],
-    category: "Zamonaviy Qurilish",
-    status: "Tugallangan"
-  },
-  {
-    id: 5,
-    title: "Andijon viloyati Shahrixon tumani Karnaychi MFY xududida ichimlik suvi tarmog‘i va suv qudug‘i qurilishi",
-    description: "Andijon viloyati Shahrixon tumani Karnaychi MFY xududida aholini toza ichimlik suvi bilan ta'minlash maqsadida yangi suv tarmog'i va suv qudug'i qurilishi loyihasi muvaffaqiyatli amalga oshirildi.",
-    images: [andijon1, andijon2, andijon3, andijon4, andijon5, andijon6, andijon7],
-    category: "Suv Ta'minoti",
-    status: "Tugallangan"
-  }
-];
 
 export default function AdvancedProjects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const projects = [
+    {
+      id: 1,
+      ...t.showcase.projects.chinni,
+      images: [chinni1, chinni2, chinni3, chinni4, chinni6, chinni7, chinni8],
+    },
+    {
+      id: 2,
+      ...t.showcase.projects.world_bank,
+      images: [qayta1, qayta2, qayta3, qayta4, qayta5],
+    },
+    {
+      id: 3,
+      ...t.showcase.projects.commerce,
+      images: [img1, img2, img3, img4],
+    },
+    {
+      id: 4,
+      ...t.showcase.projects.modern,
+      images: [project1, project2, project3, project4, project6, project7, project8],
+    },
+    {
+      id: 5,
+      ...t.showcase.projects.water,
+      images: [andijon1, andijon2, andijon3, andijon4, andijon5, andijon6, andijon7],
+    },
+    {
+      id: 6,
+      ...t.showcase.projects.iib,
+      images: [iib1, iib2, iib3, iib4, iib5, iib6, iib7, iib8],
+    }
+  ];
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -103,10 +103,8 @@ export default function AdvancedProjects() {
     <section className="projects-section" id="projects">
       <div className="container">
         <div className="projects-header">
-          <h2 className="projects-title">Bizning Loyihalar</h2>
-          <p className="projects-subtitle">
-            17 yildan buyon 300 dan oshiq loyihalar va mamnun mijozlar.
-          </p>
+          <h2 className="projects-title">{t.showcase.title}</h2>
+          <p className="projects-subtitle">{t.showcase.subtitle}</p>
         </div>
 
         <div className="projects-grid">
@@ -120,13 +118,13 @@ export default function AdvancedProjects() {
                 />
                 <div className="project-overlay">
                   <div className="project-category">{project.category}</div>
-                  <div className={`project-status ${project.status.includes('Prezident') ? 'presidential' : ''}`}>
+                  <div className={`project-status ${project.status.includes('Prezident') || project.status.includes('President') || project.status.includes('Президент') ? 'presidential' : ''}`}>
                     {project.status}
                   </div>
                 </div>
                 <div className="project-hover-overlay">
                   <button className="view-project-btn">
-                    Batafsil Ko'rish
+                    {t.showcase.view_project}
                   </button>
                 </div>
               </div>
@@ -180,7 +178,7 @@ export default function AdvancedProjects() {
 
               <div className="modal-info">
                 <div className="modal-description">
-                  <h3>Loyiha Haqida</h3>
+                  <h3>{t.showcase.about_project}</h3>
                   <p>{selectedProject.description}</p>
                 </div>
               </div>
