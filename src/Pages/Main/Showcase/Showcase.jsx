@@ -46,6 +46,21 @@ import iib5 from "../../../assets/Images/iib5.jpg";
 import iib6 from "../../../assets/Images/iib6.jpg";
 import iib7 from "../../../assets/Images/iib7.jpg";
 import iib8 from "../../../assets/Images/iib8.jpg";
+import cottage1 from "../../../assets/Images/cottage_1.jpg";
+import cottage2 from "../../../assets/Images/cottage_2.jpg";
+import cottage3 from "../../../assets/Images/cottage_3.jpg";
+import cottage4 from "../../../assets/Images/cottage_4.jpg";
+import cottage5 from "../../../assets/Images/cottage_5.jpg";
+import cottage6 from "../../../assets/Images/cottage_6.jpg";
+import cottage7 from "../../../assets/Images/cottage_7.jpg";
+import cottage8 from "../../../assets/Images/cottage_8.jpg";
+import cottage9 from "../../../assets/Images/cottage_9.jpg";
+import cottage10 from "../../../assets/Images/cottage_10.jpg";
+import cottage11 from "../../../assets/Images/cottage_11.jpg";
+import cottage12 from "../../../assets/Images/cottage_12.jpg";
+import cottage13 from "../../../assets/Images/cottage_13.jpg";
+import cottage14 from "../../../assets/Images/cottage_14.jpg";
+import cottage15 from "../../../assets/Images/cottage_15.jpg";
 
 import "./Showcase.css"
 
@@ -84,6 +99,15 @@ export default function AdvancedProjects() {
       id: 6,
       ...t.showcase.projects.iib,
       images: [iib1, iib2, iib3, iib4, iib5, iib6, iib7, iib8],
+    },
+    {
+      id: 7,
+      ...t.showcase.projects.hydrometsentr,
+      images: [
+        cottage1, cottage2, cottage3, cottage4, cottage5,
+        cottage6, cottage7, cottage8, cottage9, cottage10,
+        cottage11, cottage12, cottage13, cottage14, cottage15
+      ],
     }
   ];
 

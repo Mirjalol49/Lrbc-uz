@@ -66,6 +66,12 @@ export const translations = {
                     description: "O'zbekiston Respublikasi Ichki Ishlar Boshqarmasi Toshkent shahar IIB huzuridagi Toshkent shaxar qo'riqlash bosh Boshqarmasi Davlat Muassasida korxonamiz tomonidan bajarilgan obodonlashtirish ishlari. Loyiha doirasida hududni ko'kalamzorlashtirish, zamonaviy landshaft dizayni va infratuzilmani yaxshilash ishlari amalga oshirildi. Ushbu muassasaga O'zbekiston Respublikasi Prezidenti Shavkat Miromonovich Mirziyoyev tashrif buyurganlar.",
                     category: "Obodonlashtirish",
                     status: "Prezident tashrifi"
+                },
+                hydrometsentr: {
+                    title: "Toshkent shahar Gidrometsentr massividagi kottejlar",
+                    description: "Toshkent shahar Gidrometsentr massivida korxonamiz tomonidan 7 dona kottej qurib o'z egalariga topshirildi. 3 ta urevendan iborat ushbu kottejlar zamonaviy va minimalizm yo'nalishida qurildi. Korxonamiz tomonidan 0 dan boshlab kalitlarni tayyor holatda topshirishgacha bo'lgan vazifalarni a'lo darajada bajardi. Jami 2200 kv.metrdan iborat yashash kompleksi barcha kommunikatsiya tarmoqlariga ulab berildi. Tashqi va ichki pardozlash va mebel jihozlari bilan topshirildi.",
+                    category: "Turar-joy qurilishi",
+                    status: "Tugallangan"
                 }
             }
         },
@@ -136,6 +142,12 @@ export const translations = {
                     description: "Landscaping work performed by our company at the State Institution of the Main Security Department of the Tashkent City Police Department under the Ministry of Internal Affairs of the Republic of Uzbekistan. Within the framework of the project, greening of the area, modern landscape design and infrastructure improvement works were carried out. President of the Republic of Uzbekistan Shavkat Miromonovich Mirziyoyev visited this institution.",
                     category: "Landscaping",
                     status: "Presidential Visit"
+                },
+                hydrometsentr: {
+                    title: "Cottages in the Hydrometeorological Center block of Tashkent",
+                    description: "In the Hydrometeorological Center block of Tashkent city, our company built 7 cottages and handed them over to their owners. These 3-level cottages were built in a modern and minimalist style. Our company performed the tasks excellently from scratch to turnkey handover. The residential complex with a total area of 2200 square meters was connected to all communication networks. It was handed over with exterior and interior finishing and furniture.",
+                    category: "Residential Construction",
+                    status: "Completed"
                 }
             }
         },
@@ -206,6 +218,12 @@ export const translations = {
                     description: "Работы по благоустройству, выполненные нашей компанией в Государственном учреждении Главного управления охраны при ГУВД города Ташкента МВД Республики Узбекистан. В рамках проекта проведены работы по озеленению территории, современному ландшафтному дизайну и улучшению инфраструктуры. Данное учреждение посетил Президент Республики Узбекистан Шавкат Миромонович Мирзиёев.",
                     category: "Благоустройство",
                     status: "Визит Президента"
+                },
+                hydrometsentr: {
+                    title: "Коттеджи в массиве Гидрометеоцентра города Ташкента",
+                    description: "В массиве Гидрометеоцентра города Ташкента наша компания построила и передала владельцам 7 коттеджей. Эти 3-х уровневые коттеджи были построены в современном и минималистичном стиле. Наша компания отлично выполнила все задачи с нуля до сдачи под ключ. Жилой комплекс общей площадью 2200 квадратных метров был подключен ко всем коммуникационным сетям. Он был сдан с внешней и внутренней отделкой и мебелью.",
+                    category: "Жилое строительство",
+                    status: "Завершено"
                 }
             }
         },
