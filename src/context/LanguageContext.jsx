@@ -72,6 +72,12 @@ export const translations = {
                     description: "Toshkent shahar Gidrometsentr massivida korxonamiz tomonidan 7 dona kottej qurib o'z egalariga topshirildi. 3 ta urevendan iborat ushbu kottejlar zamonaviy va minimalizm yo'nalishida qurildi. Korxonamiz tomonidan 0 dan boshlab kalitlarni tayyor holatda topshirishgacha bo'lgan vazifalarni a'lo darajada bajardi. Jami 2200 kv.metrdan iborat yashash kompleksi barcha kommunikatsiya tarmoqlariga ulab berildi. Tashqi va ichki pardozlash va mebel jihozlari bilan topshirildi.",
                     category: "Turar-joy qurilishi",
                     status: "Tugallangan"
+                },
+                nika_pharm: {
+                    title: "Farg'ona viloyati Yozyovon shahridagi Nika Pharm saqlash obyekti",
+                    description: "Farg'ona viloyati Yozyovon shahridagi Nika Pharm tashkilotining dori mahsulotlarini saqlash uchun korxonamiz tomonidan rekonstruksiya qilingan navbatdagi yakunlangan obyekti. Bajarilgan ishlar: 3 ta yopiq turdagi jami 2100 m2 angar, 1 ta 200 m2 ofis binosi, 2 ta rezervuar, 1 ta 300 m2 ochiq angar, to'siqlar va sanuzellardan iborat.",
+                    category: "Omborxona rekonstruksiyasi",
+                    status: "Tugallangan"
                 }
             }
         },
@@ -148,6 +154,12 @@ export const translations = {
                     description: "In the Hydrometeorological Center block of Tashkent city, our company built 7 cottages and handed them over to their owners. These 3-level cottages were built in a modern and minimalist style. Our company performed the tasks excellently from scratch to turnkey handover. The residential complex with a total area of 2200 square meters was connected to all communication networks. It was handed over with exterior and interior finishing and furniture.",
                     category: "Residential Construction",
                     status: "Completed"
+                },
+                nika_pharm: {
+                    title: "Nika Pharm pharmaceutical storage facility in Yozyovon, Fergana region",
+                    description: "Our company completed the reconstruction of Nika Pharm's pharmaceutical storage facility in Yozyovon city, Fergana region. Completed works include 3 enclosed hangars with a total area of 2100 m2, a 200 m2 office building, 2 reservoirs, a 300 m2 open hangar, fencing, and sanitary facilities.",
+                    category: "Warehouse Reconstruction",
+                    status: "Completed"
                 }
             }
         },
@@ -223,6 +235,12 @@ export const translations = {
                     title: "Коттеджи в массиве Гидрометеоцентра города Ташкента",
                     description: "В массиве Гидрометеоцентра города Ташкента наша компания построила и передала владельцам 7 коттеджей. Эти 3-х уровневые коттеджи были построены в современном и минималистичном стиле. Наша компания отлично выполнила все задачи с нуля до сдачи под ключ. Жилой комплекс общей площадью 2200 квадратных метров был подключен ко всем коммуникационным сетям. Он был сдан с внешней и внутренней отделкой и мебелью.",
                     category: "Жилое строительство",
+                    status: "Завершено"
+                },
+                nika_pharm: {
+                    title: "Объект хранения лекарственной продукции Nika Pharm в Язяване Ферганской области",
+                    description: "Наша компания завершила реконструкцию объекта Nika Pharm для хранения лекарственной продукции в городе Язяван Ферганской области. Выполненные работы: 3 закрытых ангара общей площадью 2100 m2, офисное здание 200 m2, 2 резервуара, 1 открытый ангар площадью 300 m2, ограждения и санузлы.",
+                    category: "Реконструкция склада",
                     status: "Завершено"
                 }
             }

@@ -61,6 +61,15 @@ import cottage12 from "../../../assets/Images/cottage_12.jpg";
 import cottage13 from "../../../assets/Images/cottage_13.jpg";
 import cottage14 from "../../../assets/Images/cottage_14.jpg";
 import cottage15 from "../../../assets/Images/cottage_15.jpg";
+import nikaPharm1 from "../../../assets/Images/nika_pharm_1.jpg";
+import nikaPharm2 from "../../../assets/Images/nika_pharm_2.jpg";
+import nikaPharm3 from "../../../assets/Images/nika_pharm_3.jpg";
+import nikaPharm4 from "../../../assets/Images/nika_pharm_4.jpg";
+import nikaPharm5 from "../../../assets/Images/nika_pharm_5.jpg";
+import nikaPharm6 from "../../../assets/Images/nika_pharm_6.jpg";
+import nikaPharm7 from "../../../assets/Images/nika_pharm_7.jpg";
+import nikaPharm8 from "../../../assets/Images/nika_pharm_8.jpg";
+import nikaPharm9 from "../../../assets/Images/nika_pharm_9.jpg";
 
 import "./Showcase.css"
 
@@ -107,6 +116,14 @@ export default function AdvancedProjects() {
         cottage1, cottage2, cottage3, cottage4, cottage5,
         cottage6, cottage7, cottage8, cottage9, cottage10,
         cottage11, cottage12, cottage13, cottage14, cottage15
+      ],
+    },
+    {
+      id: 8,
+      ...t.showcase.projects.nika_pharm,
+      images: [
+        nikaPharm1, nikaPharm2, nikaPharm3, nikaPharm4, nikaPharm5,
+        nikaPharm6, nikaPharm7, nikaPharm8, nikaPharm9
       ],
     }
   ];
